@@ -1,9 +1,9 @@
 dbt_project:
   outputs:
     dev:
-      account: LYWSETG-UK05223
+      account: ********
       database: AIRBNB
-      password: KaranAnilBhatt07@
+      password: ***********
       role: ACCOUNTADMIN
       schema: DBT_Schema
       threads: 1
