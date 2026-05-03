@@ -1,0 +1,13 @@
+dbt_project:
+  outputs:
+    dev:
+      account: LYWSETG-UK05223
+      database: AIRBNB
+      password: KaranAnilBhatt07@
+      role: ACCOUNTADMIN
+      schema: DBT_Schema
+      threads: 1
+      type: snowflake
+      user: KARANBHATT081
+      warehouse: COMPUTE_WH
+  target: dev

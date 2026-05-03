@@ -1,0 +1,13 @@
+SELECT
+    LISTING_ID,
+    HOST_ID,
+    ROOM_TYPE,
+    CITY,
+    COUNTRY,
+    ACCOMMODATES,
+    BEDROOMS,
+    BATHROOMS,
+    PRICE_PER_NIGHT,
+    {{ tag('CAST(PRICE_PER_NIGHT AS INT)') }} AS PRICE_PER_NIGHT_TAG,
+    CREATED_AT
+FROM {{ ref('bronze_listings') }}
